@@ -1,0 +1,64 @@
+
+
+.footer__title {
+  margin: 0 0 54px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+
+.footer__address {
+  margin: 0 0 35px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.footer__item {
+  padding-left: 70px;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.footer__item_type_location {
+  margin: 0 0 38px;
+  background-image: url("../img/location.svg");
+  white-space: pre-line;
+}
+
+.footer__item_type_tel {
+  margin: 0 0 11px;
+  background-image: url("../img/phone-call.svg");
+}
+
+.footer__item_type_mail {
+  margin: 0;
+  background-image: url("../img/envelope.svg");
+}
+
+.footer__link {
+  text-decoration: none;
+  color: #FFF;
+}
+
+
+.footer__nav-list {
+  font-size: 0;
+  list-style: none;
+}
+
+.footer__nav-item {
+  display: inline-block;
+  margin: 0 26px 0 0;
+}
+
+.footer__nav-item:last-child {
+  margin-right: 0;
+}
+
+.footer__nav-link {
+  color: #FFF;
+  display: block;
+}

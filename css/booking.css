@@ -1,0 +1,34 @@
+
+
+.booking__title {
+  margin: 0 0 50px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+
+.booking-form__halls {
+  border: 1px solid #FFF;
+}
+
+.booking-form__room {
+  border: 1px solid #FFF;
+}
+
+.booking-form__room-prefix {
+  border: 1px solid #FFF;
+}
+
+.booking-form__room-game {
+  border: 1px solid #FFF;
+}
+
+.booking-form__room-additionally {
+  border: 1px solid #FFF;
+}
+
+.booking-form__room-order {
+  border: 1px solid #FFF;
+}
