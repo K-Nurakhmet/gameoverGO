@@ -23,11 +23,12 @@
 }
 
 .visitor__figure {
-  max-width: 280px;
   float: left;
+  margin: 0 20px 0 0;
 }
 
 .visitor__img {
+  margin: 0 0 11px ;
   width: 280px;
   height: 280px;
   border-radius: 50%;
@@ -40,8 +41,5 @@
 }
 
 .visitor__text {
-  display: inline-block;
-  margin: 0;
-  padding: 60px 0 0 20px;
-  max-width: 680px;
+  padding: 60px 0 0;
 }

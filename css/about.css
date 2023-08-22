@@ -22,7 +22,7 @@
 }
 
 .about__description-text {
-  padding: 0 0 59px;
+  margin: 0 0 59px;
 }
 
 .about__text {
@@ -36,11 +36,11 @@
 .about__quote {
   position: relative;
   margin: 0;
+  padding: 0 0 0 30px;
 }
 
 .about__quote-text {
   margin: 0 0 41px;
-  padding-left: 30px;
   font-size: 44px;
   line-height: 1.25;
   text-transform: uppercase;
@@ -52,7 +52,7 @@
   content: "“";
   position: absolute;
   left: 0;
-  top: 20px;
+  top: -8px;
 }
 
 .about__quote-text::after {
@@ -63,7 +63,6 @@
 .about__quote-text::after {
   color: #6C0287;
   font-weight: 900;
-  line-height: 1.25px;
 }
 
 .about__caption-text {
