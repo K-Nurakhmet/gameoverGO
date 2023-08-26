@@ -19,28 +19,28 @@
 }
 
 
-.halls__item_room_vibes_bg {
+.halls__item_img_vibes-bg {
   background-image: url("../img/vibes.jpg");
   margin: 0 20px 20px 0;
 }
 
-.halls__item_room_star-wars_bg {
+.halls__item_img_starwars-bg {
   background-image: url("../img/star-wars.jpg");
 }
 
-.halls__item_room_wild-west_bg {
+.halls__item_img_wildwest-bg {
   background-image: url("../img/wild-west.jpg");
   margin: 0 20px 0 0;
 }
 
-.halls__item_room_neon-style_bg {
+.halls__item_img_neon-bg {
   background-image: url("../img/neon-style.jpg");
 }
 
-.halls__item_room_vibes_bg,
-.halls__item_room_star-wars_bg,
-.halls__item_room_wild-west_bg,
-.halls__item_room_neon-style_bg {
+.halls__item_img_vibes-bg,
+.halls__item_img_starwars-bg,
+.halls__item_img_wildwest-bg,
+.halls__item_img_neon-bg {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
