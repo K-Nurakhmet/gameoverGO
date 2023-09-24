@@ -1,0 +1,47 @@
+.rest__title {
+  margin-bottom: 41px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.25;
+  text-transform: uppercase;
+  white-space: pre-line;
+}
+
+.rest__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 20px;
+}
+
+.rest__item {
+  padding: 166px 40px 0;
+  flex-basis: 380px;
+  height: 228px;
+  background: no-repeat center/cover;
+}
+
+.rest__item_theme_vr {
+  background-image: url("../img/VR-glasses.jpeg");
+}
+
+.rest__item_theme_audio {
+  background-image: url("../img/Audio-system.jpeg");
+}
+
+.rest__item_theme_karaoke {
+  background-image: url("../img/Karaoke.jpeg");
+}
+
+.rest__item_theme_game {
+  background-image: url("../img/Board-games.jpeg");
+}
+
+.rest__item_theme_netflix {
+  background-image: url("../img/Netflix.jpeg");
+  background-position-y: -90px;
+}
+
+.rest__item_theme_ps {
+  background-image: url("../img/PlayStation5.jpeg");
+}

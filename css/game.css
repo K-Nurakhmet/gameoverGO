@@ -1,5 +1,5 @@
 .game {
-  padding: 146px 0 50px;
+  padding: 25px 0 50px;
 }
 
 .game__container {
@@ -28,7 +28,58 @@
 }
 
 .game__text {
+  margin: 0 0 30px;
   padding: 0 0 0 100px;
   font-size: 28px;
   line-height: 1.8;
+}
+
+.game__content {
+  display: flex;
+  align-items: flex-end;
+  gap: 40px;
+  margin-bottom: 150px;
+}
+
+.game__content-inner {
+  flex-basis: 193px;
+  text-align: center;
+}
+
+.game__content-excerpt {
+  color: #CD06FF;
+  font-size: 100px;
+  font-weight: 900;
+  line-height: normal;
+}
+
+.game__content-text {
+  font-size: 30px;
+  line-height: normal;
+}
+
+.game__content-excerpt_size_s {
+  color: #CD06FF;
+  font-size: 75px;
+  font-weight: 900;
+  line-height: normal;
+  font-variant: small-caps;
+}
+
+.game__button {
+  padding: 25px 69px;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 115.385%;
+  text-transform: uppercase;
+  color: #FFF;
+  border-radius: 10px;
+  background-color: #6C0287;
+}
+
+.game__link {
+  position: absolute;
+  bottom: 90px;
+  right: 46%;
+  z-index: 3;
 }

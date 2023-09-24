@@ -8,45 +8,106 @@
     <title>GAME OVER</title>
   </head>
   <body>
+    <header class="header">
+      <div class="header__container container">
+      <img class="header__img" src="img/logo.svg" alt="Логотип GO">
+      <nav class="header-nav">
+        <ul class="header-nav__list">
+          <li class="header-nav__item"><a href="#" class="header-nav__link">Залы</a></li>
+          <li class="header-nav__item"><a href="#" class="header-nav__link">О нас</a></li>
+          <li class="header-nav__item"><a href="#" class="header-nav__link">Бронь</a></li>
+          <li class="header-nav__item"><a href="#" class="header-nav__link">Отзывы</a></li>
+          <li class="header-nav__item"><a href="#" class="header-nav__link">Контакты</a></li>
+        </ul>
+      </nav>
+      <a class="header__call" href="tel:">Заказать звонок</a>
+    </div>
+    </header>
+
     <main>
       <section class="game section">
         <div class="container game__container">
           <h1 class="game__title">GAME OVER</h1>
           <p class="game__text">Новый формат игр и отдыха</p>
+          <div class="game__content">
+            <div class="game__content-inner">
+              <p class="game__content-excerpt">4</p>
+              <p class="game__content-text">Тематических зала</p>
+            </div>   
+            <div class="game__content-inner">
+              <p class="game__content-excerpt game__content-excerpt_size_s">new</p>
+              <p class="game__content-text">Новейшая аппаратура</p>
+            </div>
+          </div>
+          <button class="game__button" type="submit">Забронировать</button>
+          <a class="game__link" href="#rest">
+            <svg xmlns="http://www.w3.org/2000/svg" width="97" height="97" viewBox="0 0 97 97" fill="none">
+              <circle cx="48.5" cy="48.5" r="48" stroke="white"/>
+              <rect x="34.4255" y="43.9162" width="1.82001" height="20.0201" transform="rotate(-44.9975 34.4255 43.9162)" fill="currentColor"/>
+              <rect x="48.5807" y="58.0737" width="1.82001" height="20.0201" transform="rotate(-134.997 48.5807 58.0737)" fill="currentColor"/>
+              </svg>
+          </a>
         </div>
       </section>
 
-      <section class="halls section" id="halls">
+      <section class="rest section" id="rest">
+        <div class="container">
+        <h2 class="rest__title">У нас есть все для классного
+            отдыха с друзьями!</h2>
+        <ul class="rest__list">
+          <li class="rest__item rest__item_theme_vr">
+            <p class="rest__text">VR очки</p>
+          </li>
+          <li class="rest__item rest__item_theme_audio">
+            <p class="rest__text">Аудио-система 5.1 с отличным звуком</p>
+          </li>
+          <li class="rest__item rest__item_theme_karaoke">
+            <p class="rest__text">Караоке (4 микрофона)</p>
+          </li>
+          <li class="rest__item rest__item_theme_game">
+            <p class="rest__text">Настольные игры</p>
+          </li>
+          <li class="rest__item rest__item_theme_netflix">
+            <p class="rest__text">Кино сервисы Netflix, IVI, MegoGo, КиноПоиск, Okko</p>
+          </li>
+          <li class="rest__item rest__item_theme_ps">
+            <p class="rest__text">РlаyStаtiоn 5</p>
+          </li>
+        </ul>
+      </div>
+      </section>
+
+      <section class="halls" id="halls">
         <div class="container">
           <h2 class="halls__title">Наши залы</h2>
           <ul class="halls__list">
-            <li class="halls__item halls__item_theme_left">
+            <li class="halls__item">
               <figure class="halls__figure">
-                <img class="halls-item__img" src="img/vibes.jpg" alt="">
+                <img class="halls__img" src="img/vibes.jpg" alt="">
                 <figcaption class="halls__figcaption">
                   <a class="halls__link" href="#">80's vibes</a>
                 </figcaption>
               </figure>
             </li>
-            <li class="halls__item halls__item_theme_right">
+            <li class="halls__item ">
               <figure class="halls__figure">
-                <img class="halls-item__img" src="img/star-wars.jpg" alt="">
+                <img class="halls__img" src="img/star-wars.jpg" alt="">
                 <figcaption class="halls__figcaption">
                   <a class="halls__link" href="#">Star wars</a>
                 </figcaption>
               </figure>
             </li>
-            <li class="halls__item halls__item_theme_left">
+            <li class="halls__item">
               <figure class="halls__figure">
-                <img class="halls-item__img" src="img/wild-west.jpg" alt="">
+                <img class="halls__img" src="img/wild-west.jpg" alt="">
                 <figcaption class="halls__figcaption">
                   <a class="halls__link" href="#">Wild west</a>
                 </figcaption>
               </figure>
             </li>
-            <li class="halls__item halls__item_theme_right">
+            <li class="halls__item ">
               <figure class="halls__figure">
-                <img class="halls-item__img" src="img/neon-style.jpg" alt="">
+                <img class="halls__img" src="img/neon-style.jpg" alt="">
                 <figcaption class="halls__figcaption">
                   <a class="halls__link" href="#">Neon style</a>
                 </figcaption>
@@ -66,148 +127,138 @@
             method="post"
           >
             <fieldset class="booking-form__halls">
-              <input id="vibes" type="radio" name="breakfast" value="vibes" />
-              <label for="vibes">80's vibes</label>
-              <input
+              <legend class="booking-form__legend">Выбери зал</legend>
+              <input class="booking-form__halls-input" id="vibes" type="radio" name="breakfast" value="vibes" />
+              <label class="booking-form__halls-label" for="vibes">80's vibes</label>
+              <input class="booking-form__halls-input"
                 id="starwars"
                 type="radio"
                 name="breakfast"
                 value="star-wars"
               />
-              <label for="starwars">star wars</label>
-              <input
+              <label class="booking-form__halls-label" for="starwars">star wars</label>
+              <input class="booking-form__halls-input"
                 id="wildwest"
                 type="radio"
                 name="breakfast"
                 value="wild-west"
               />
-              <label for="wildwest">wild west</label>
-              <input
+              <label class="booking-form__halls-label" for="wildwest">wild west</label>
+              <input class="booking-form__halls-input"
                 id="neonstyle"
                 type="radio"
                 name="breakfast"
                 value="neon-style"
               />
-              <label for="neonstyle">neon style</label>
+              <label class="booking-form__halls-label" for="neonstyle">neon style</label>
             </fieldset>
 
             <fieldset class="booking-form__room">
-              <legend>Собери набор развлечений</legend>
-              <fieldset class="booking-form__room-prefix">
-                <legend>Приставка:</legend>
-                <label
-                  ><input
+              <legend class="booking-form__legend">Собери набор развлечений</legend>
+              <fieldset class="booking-form__room-choice">
+                <legend class="booking-form__room-legend">Приставка:</legend>
+                <label class="booking-form__room-label"
+                  ><input class="booking-form__room-input"
                     type="radio"
                     name="game"
                     value="ps"
                   />PlatStation</label
                 >
-                <label
-                  ><input type="radio" name="game" value="sega" />Sega Mega
+                <label class="booking-form__room-label"
+                  ><input class="booking-form__room-input" type="radio" name="game" value="sega" />Sega Mega
                   Drive</label
                 >
-                <label
-                  ><input type="radio" name="game" value="xbox" />X-box One
+                <label class="booking-form__room-label"
+                  ><input class="booking-form__room-input" type="radio" name="game" value="xbox" />X-box One
                   S</label
                 >
-                <label
-                  ><input type="radio" name="game" value="dendy" />Dendy</label
+                <label class="booking-form__room-label"
+                  ><input class="booking-form__room-input" type="radio" name="game" value="dendy" />Dendy</label
                 >
               </fieldset>
-              <fieldset class="booking-form__room-game">
-                <legend>Настольные игры:</legend>
-                <label
-                  ><input
+              <fieldset class="booking-form__room-choice">
+                <legend class="booking-form__room-legend">Настольные игры</legend>
+                <label class="booking-form__room-label"
+                  ><input class="booking-form__room-checkbox"
                     type="checkbox"
                     name="table-games"
                     value="jenga"
                   />Jenga</label
                 >
-                <label
-                  ><input
+                <label class="booking-form__room-label"
+                  ><input class="booking-form__room-checkbox"
                     type="checkbox"
                     name="table-games"
                     value="monopoly"
                   />Monopoly</label
                 >
-                <label
-                  ><input
+                <label class="booking-form__room-label"
+                  ><input class="booking-form__room-checkbox"
                     type="checkbox"
                     name="table-games"
                     value="munchkin"
                   />Манчкин</label
                 >
-                <label
-                  ><input
+                <label class="booking-form__room-label"
+                  ><input class="booking-form__room-checkbox"
                     type="checkbox"
                     name="table-games"
                     value="alias"
                   />Alias</label
                 >
               </fieldset>
-              <fieldset class="booking-form__room-additionally">
-                <legend>Дополнительно:</legend>
-                <label
-                  ><input
+              <fieldset class="booking-form__room-choice">
+                <legend class="booking-form__room-legend">Дополнительно</legend>
+                <label class="booking-form__room-label"><input class="booking-form__room-checkbox"
                     type="checkbox"
                     name="additionally"
-                    value="karaoke"
-                  />Караоке</label
+                    value="karaoke"/>Караоке</label
                 >
-                <label
-                  ><input
+                <label class="booking-form__room-label"><input class="booking-form__room-checkbox"
                     type="checkbox"
                     name="additionally"
-                    value="vr"
-                  />VR</label
-                >
+                    value="vr"/>VR</label>
               </fieldset>
             </fieldset>
 
-            <fieldset class="booking-form__room-order">
-              <legend>Выбери дату и время</legend>
-              <div>
-                <div>
-                  <label for="date">Дата*</label>
-                  <input id="date" name="date" required />
-
-                  <label for="time">Время*</label>
-                  <input id="time" name="time" required />
+            <fieldset class="booking-form__order">
+              <legend class="booking-form__legend">Выбери дату и время</legend>
+              <div class="booking-form__order-inner">
+                <div class="booking-form__order-left">
+                  <input class="booking-form__order-input" id="date" name="date" placeholder="Дата" required />
+                  <input class="booking-form__order-input" id="time" name="time" placeholder="Время" required />
                 </div>
 
-                <label for="humans">Количество человек*</label>
-                <input
+                <input class="booking-form__order-input booking-form__order-input_size_big"
                   id="humans"
                   type="number"
                   name="num-people"
-                  placeholder="Кол.число"
+                  placeholder="Сколько человек"
                   required
                 />
               </div>
 
-              <div>
-                <label for="username">Имя*</label>
-                <input
+              <div class="booking-form__order-center">
+                <label class="booking-form__order-text" for="username">Имя*</label>
+                <input class="booking-form__order-info"
                   id="username"
                   type="text"
                   name="name"
-                  placeholder="Введите имя"
                   required
                 />
 
-                <label for="surname">Фамилия*</label>
-                <input
+                <label class="booking-form__order-text" for="surname">Фамилия*</label>
+                <input class="booking-form__order-info input-surname"
                   id="surname"
                   type="text"
                   name="surname"
-                  placeholder="Введите фамилия"
                   required
                 />
               </div>
 
-              <div>
-                <label for="phone">Номер телефона*</label>
-                <input
+              <div class="booking-form__order-right">
+                <label class="booking-form__order-text" for="phone">Номер телефона*</label>
+                <input class="booking-form__order-info"
                   id="phone"
                   type="tel"
                   name="phone"
@@ -216,24 +267,16 @@
                   pattern="^\+?[7-8]-?[0-9]{3}-?[0-9]{3}-?[0-9]{2}-?[0-9]{2}$"
                 />
 
-                <label for="email">E-mail</label>
-                <input
+                <label class="booking-form__order-text" for="email">E-mail</label>
+                <input class="booking-form__order-info input-mail"
                   id="email"
                   type="email"
                   name="email"
-                  placeholder="Введите @mail"
                   required
                 />
+                <button class="booking-form__button" type="submit">Забронировать</button>
               </div>
             </fieldset>
-            <button type="submit">Забронировать</button>
-            <label
-              ><input
-                type="checkbox"
-                name="agreement"
-                value="agreement"
-              />Согласен на обработку данных</label
-            >
           </form>
         </div>
       </section>
@@ -322,8 +365,8 @@
       </section>
     </main>
 
-    <footer class="footer section" id="contacts">
-      <div class="container">
+    <footer class="footer" id="contacts">
+      <div class="container footer__container">
         <h2 class="footer__title">Контакты</h2>
         <address class="footer__address">
           <p class="footer__item footer__item_type_location">г.Москва
@@ -419,6 +462,13 @@
             </li>
           </ul>
         </nav>
+        <div class="footer__content">
+          <p class="footer__copy designer-text">© Game Over, 2022</p>
+          <ul class="footer__list-designer">
+            <li class="footer__item-designer designer-text">Design by Anastasia Ilina</li>
+            <li class="footer__item-designer designer-text"><a class="footer__link-designer" href="mailto:ilina9825@gmail.com">ilina9825@gmail.com</a></li>
+          </ul>
+        </div>
       </div>
     </footer>
   </body>

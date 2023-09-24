@@ -1,4 +1,6 @@
-
+.halls {
+  padding: 50px 0 100px;
+}
 .halls__title {
   margin: 0 0 40px;
   text-align: center;
@@ -9,35 +11,24 @@
 }
 
 .halls__list {
-  display: flow-root;
+  margin: -10px;
+  font-size: 0;
 }
 
 .halls__item {
   position: relative;
+  display: inline-block;
   text-align: center;
+  margin: 10px;
 }
 
-.halls-item__img {
+.halls__img {
   position: absolute;
   top: 0;
   right: 0;
   left: 0;
   bottom: 0;
   z-index: -1;
-}
-
-.halls__item_theme_left {
-  float: left;
-  margin: 0 20px 20px 0;
-}
-
-.halls__item_theme_right {
-  float: right;
-  margin: 0 0 20px;
-}
-
-.halls__item:nth-child(3) {
-  margin: 0 20px 0 0;
 }
 
 .halls__item_theme_right:last-child {

@@ -23,8 +23,9 @@
 }
 
 .visitor__figure {
-  float: left;
+  display: inline-block;
   margin: 0 20px 0 0;
+  vertical-align: top;
 }
 
 .visitor__img {
@@ -41,5 +42,8 @@
 }
 
 .visitor__text {
+  display: inline-block;
   padding: 60px 0 0;
+  max-width: calc(100% - 306px);
+  vertical-align: top;
 }

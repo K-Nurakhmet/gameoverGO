@@ -1,6 +1,7 @@
-
 @import url(global.css);
+@import url(header.css);
 @import url(game.css);
+@import url(rest.css);
 @import url(halls.css);
 @import url(about.css);
 @import url(visitor.css);
