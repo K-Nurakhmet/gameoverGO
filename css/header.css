@@ -20,12 +20,11 @@
   text-transform: uppercase;
 }
 
-.header__call {
-  padding: 12px 32px;
+.header__button {
   font-size: 22px;
   font-weight: 700;
   line-height: 136.364%;
   text-transform: uppercase;
-  border-radius: 10px;
-  border: 3px solid #CD06FF;
+
 }
+

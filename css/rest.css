@@ -14,34 +14,38 @@
   gap: 40px 20px;
 }
 
+.rest__text {
+  font-weight: 700;
+}
+
 .rest__item {
-  padding: 166px 40px 0;
+  padding: 166px 40px 6px;
   flex-basis: 380px;
   height: 228px;
   background: no-repeat center/cover;
 }
 
-.rest__item_theme_vr {
+.rest__item_equipment_vr {
   background-image: url("../img/VR-glasses.jpeg");
 }
 
-.rest__item_theme_audio {
+.rest__item_equipment_audio {
   background-image: url("../img/Audio-system.jpeg");
 }
 
-.rest__item_theme_karaoke {
+.rest__item_equipment_karaoke {
   background-image: url("../img/Karaoke.jpeg");
 }
 
-.rest__item_theme_game {
+.rest__item_equipment_game {
   background-image: url("../img/Board-games.jpeg");
 }
 
-.rest__item_theme_netflix {
+.rest__item_equipment_netflix {
   background-image: url("../img/Netflix.jpeg");
   background-position-y: -90px;
 }
 
-.rest__item_theme_ps {
-  background-image: url("../img/PlayStation5.jpeg");
+.rest__item_equipment_ps {
+  background-image: url("../img/PlayStation5.jpg");
 }

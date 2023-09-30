@@ -22,7 +22,6 @@
 .booking-form__halls {
   display: flex;
   justify-content: space-between;
-  gap: 60px;
   margin: 0 0 60px;
   padding: 0;
   border: none;
@@ -33,6 +32,7 @@
 }
 
 .booking-form__halls-label {
+  width: 250px;
   padding: 7px 15px;
   color: #000;
   background-color: #FFF;
@@ -42,6 +42,10 @@
   font-weight: 700;
   line-height: 133.333%;
   text-transform: uppercase;
+}
+
+.booking-form__halls-input:checked + .booking-form__halls-label {
+  background-color: #6C0287;
 }
 
 .booking-form__room {
@@ -56,6 +60,7 @@
 .booking-form__room-choice {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   gap: 20px;
   padding: 0;
   border: none;
@@ -71,7 +76,9 @@
 .booking-form__room-label {
   display: flex;
   align-items: center;
+  position: relative;
   font-size: 22px;
+  line-height: normal;
 }
 
 .booking-form__room-input {
@@ -81,9 +88,38 @@
 }
 
 .booking-form__room-checkbox {
-  margin: 0 12px 0 0;
+  display: block;
+  margin: 0 37px 0 0;
+  appearance: none;
+}
+
+.booking-form__room-checkbox:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 25px;
   height: 25px;
+  background-color:  #F4F2FF;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.booking-form__room-checkbox::after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 2px;
+  width: 20px;
+  height: 10px;
+  border: 3px solid black;
+  border-top: none;
+  border-right: none;
+  opacity: 0;
+  transform: rotate(-45deg);
+}
+
+.booking-form__room-checkbox:checked:after {
+  opacity: 1;
 }
 
 .booking-form__order {
@@ -109,21 +145,42 @@
 }
 
 .booking-form__order-input {
-  max-width: 134px;
-  padding: 12px 27px 12px 20px;
+  position: relative;
+  width: 134px;
+  padding: 12px 20px 12px 20px;
   background-image: url("../img/arrow.svg");
   background-repeat: no-repeat;
-  background-position: right 27px center;
-}
-
-.booking-form__order-input_size_big {
-  max-width: 100%;
+  background-position: center right 18px;
+  background-size: 30px;
 }
 
 .booking-form__order-input::placeholder {
   color: #211E1E;
   font-size: 18px;
   line-height: 155.556%;
+  font-weight: 400;
+}
+
+.booking-form__order-input::-webkit-calendar-picker-indicator {
+  margin: 0;
+  background: url("../img/arrow.svg") no-repeat; 
+  background-size: cover;
+  width: 21px;
+  height: 15px;
+}
+
+.booking-form__order-input_size_big {
+  width: 100%;
+}
+
+
+.booking-form__order-input_size_big::-webkit-outer-spin-button,
+.booking-form__order-input_size_big::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  background-image: url("../img/arrow.svg");
+  background-position: right;
+  width: 21px;
+  height: 15px;
 }
 
 .booking-form__order-center {
