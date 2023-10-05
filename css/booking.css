@@ -44,6 +44,21 @@
   text-transform: uppercase;
 }
 
+.booking-form__halls-label:hover {
+  background-color: #EADEED;
+  outline: 3px solid #640AA3;
+}
+
+.booking-form__halls-label:active {
+  background-color: #6C0287;
+  outline: 3px solid #FFF;
+}
+
+.booking-form__halls-label:focus {
+  background-color: #FFF;
+  outline: 3px solid #640AA3;
+}
+
 .booking-form__halls-input:checked + .booking-form__halls-label {
   background-color: #6C0287;
 }
@@ -152,6 +167,7 @@
   background-repeat: no-repeat;
   background-position: center right 18px;
   background-size: 30px;
+  border: none;
 }
 
 .booking-form__order-input::placeholder {
@@ -197,13 +213,20 @@
   max-width: 100%;
   padding: 12px 27px;
   margin: 0 0 14px 0;
+  border: none;
 }
 
-.input-surname {
+.booking-form__order-info:last-child {
   margin: 0;
 }
 
-.input-mail {
+.booking-form__order-input:focus,
+.booking-form__order-info:focus {
+  outline: 2px solid #CD06FF;
+  background-color: #FFF;
+}
+
+.booking-form__order-info_type_email {
   margin: 0 0 40px 0;
 }
 
@@ -212,7 +235,7 @@
 }
 
 .booking-form__button {
-  padding: 16px 50px;
+  padding: 10px 44px;
   background-color: #FFF;
   color: #6C0287;
   border-radius: 10px;
@@ -220,4 +243,30 @@
   font-weight: 700;
   line-height: 127.273%;
   text-transform: uppercase;
+  border: 3px solid transparent;
+}
+
+.booking-form__button:hover {
+  border: 3px solid #6C0287;
+  background-color: #EADEED;
+}
+
+.booking-form__button:active {
+  background-color: #EADEED;
+  border: 3px solid #EADEED;
+}
+
+.booking-form__button:focus {
+  outline: 3px solid #6C0287;
+  background: #FFF;
+}
+
+.booking-form__room-input:focus-visible {
+  outline: 1px solid #CD06FF;
+  outline-offset: 3px;
+}
+
+.booking-form__room-checkbox:focus-visible::before {
+  outline: 1px solid #CD06FF;
+  outline-offset: 3px;
 }

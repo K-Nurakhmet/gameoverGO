@@ -21,9 +21,13 @@ body {
   color: #FFFFFF;
 }
 
-img, svg {
+img {
   max-width: 100%;
-  max-height: 100%;
+  height: auto;
+}
+
+.svg {
+  max-width: 100%;
   height: auto;
 }
 
@@ -80,6 +84,6 @@ iframe {
 .button {
   padding: 12px 32px;
   border-radius: 10px;
-  border: 3px solid #CD06FF;
+  outline: 3px solid #CD06FF;
   color: #FFF;
 }

@@ -35,17 +35,17 @@
               <p class="game__content-text">Тематических зала</p>
             </div>   
             <div class="game__content-inner">
-              <p class="game__content-excerpt game__content-excerpt_size_s">new</p>
+              <p class="game__content-num">new</p>
               <p class="game__content-text">Новейшая аппаратура</p>
             </div>
           </div>
-          <a href="#booking" class="game__button button" type="submit">Забронировать</a>
-          <a class="game__link" href="#rest">
+          <a href="#booking" class="game__link" type="submit">Забронировать</a>
+          <a class="game__arrow" href="#rest">
             <svg xmlns="http://www.w3.org/2000/svg" width="97" height="97" viewBox="0 0 97 97" fill="none">
-              <circle cx="48.5" cy="48.5" r="48" stroke="white"/>
-              <rect x="34.4255" y="43.9162" width="1.82001" height="20.0201" transform="rotate(-44.9975 34.4255 43.9162)" fill="currentColor"/>
-              <rect x="48.5807" y="58.0737" width="1.82001" height="20.0201" transform="rotate(-134.997 48.5807 58.0737)" fill="currentColor"/>
-              </svg>
+              <circle cx="48.5" cy="48.5" r="48" stroke="currentColor"/>
+              <rect x="34.4253" y="43.9162" width="1.82001" height="20.0201" transform="rotate(-44.9975 34.4253 43.9162)" fill="currentColor"/>
+              <rect x="48.5806" y="58.0737" width="1.82001" height="20.0201" transform="rotate(-134.997 48.5806 58.0737)" fill="currentColor"/>
+            </svg>
           </a>
         </div>
       </section>
@@ -215,7 +215,7 @@
                 />
 
                 <label class="booking-form__order-text" for="surname">Фамилия</label>
-                <input class="booking-form__order-info input-surname"
+                <input class="booking-form__order-info"
                   id="surname"
                   type="text"
                   name="surname"
@@ -235,7 +235,7 @@
                 />
 
                 <label class="booking-form__order-text" for="email">E-mail</label>
-                <input class="booking-form__order-info input-mail"
+                <input class="booking-form__order-info booking-form__order-info_type_email"
                   id="email"
                   type="email"
                   name="email"
@@ -318,11 +318,26 @@
         <div class="container">
           <h2 class="questions__title">Частые вопросы</h2>
           <ul class="questions__list">
-            <li class="questions__item"><p class="questions__item-text">Можно ли забронировать комнату онлайн?</p> <img class="questions__item-img" src="img/open-purple.svg" alt="Фиолетовый круг"></li>
-            <li class="questions__item"><p class="questions__item-text">Могут ли мне вернуть деньги за бронь?</p> <img class="questions__item-img" src="img/open-white.svg" alt="Белый круг"></li>
-            <li class="questions__item"><p class="questions__item-text">Какая комната самая популярная?</p> <img class="questions__item-img" src="img/open-purple.svg" alt="Фиолетовый круг"></li>
-            <li class="questions__item"><p class="questions__item-text">Как получить VIP карту?</p> <img class="questions__item-img" src="img/open-white.svg" alt="Белый круг"></li>
-            <li class="questions__item"><p class="questions__item-text">Какая комната самая популярная?</p><img class="questions__item-img" src="img/open-purple.svg" alt="Фиолетовый круг"></li>
+            <li class="questions__item">
+              <p class="questions__item-text">Можно ли забронировать комнату онлайн?</p>
+              <a class="questions__item-link questions__item-link_open_purple" href="#questions"></a>
+            </li>
+            <li class="questions__item">
+              <p class="questions__item-text">Могут ли мне вернуть деньги за бронь?</p>
+              <a class="questions__item-link questions__item-link_open-white" href="#questions"></a>
+            </li>
+            <li class="questions__item">
+              <p class="questions__item-text">Какая комната самая популярная?</p>
+              <a class="questions__item-link questions__item-link_open_purple" href="#questions"></a>
+            </li>
+            <li class="questions__item">
+              <p class="questions__item-text">Как получить VIP карту?</p>
+              <a class="questions__item-link questions__item-link_open-white" href="#questions"></a>
+            </li>
+            <li class="questions__item">
+              <p class="questions__item-text">Какая комната самая популярная?</p>
+              <a class="questions__item-link questions__item-link_open_purple" href="#questions"></a>
+            </li>
           </ul>
         </div>
       </section>
@@ -405,24 +420,11 @@
                 href="https://www.stumbleupon.com"
                 target="_blank"
               >
-                <svg
-                  width="50"
-                  height="50"
-                  viewbox="0 0 50 50"
-                  fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M44.7441 9.66919C48.1583 14.0494 50.0085 19.4463 49.9999 24.9999C49.9999 38.8051 38.805 49.9999 25.0006 49.9999C15.2871 49.9999 6.86597 44.4576 2.72751 36.3647H13.6237C18.816 36.3647 22.4429 33.566 22.4429 29.0923C22.4429 19.6108 11.5051 23.4737 11.5051 20.1089C11.5051 18.4878 12.8057 17.898 15.1858 17.898H22.7692C24.8711 17.898 27.3435 18.275 27.3435 20.5685V28.1243C27.3435 33.5955 31.6159 36.364 36.0441 36.364C40.548 36.364 44.7435 33.5955 44.7435 28.1243V9.66919H44.7441Z"
-                  />
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M25.0005 2.43241e-05C30.0173 -0.00698868 34.919 1.50262 39.0626 4.33079V28.3013C39.0626 29.9628 37.7037 31.3224 36.0447 31.3224C34.3838 31.3224 33.0261 29.9628 33.0261 28.3013V21.1186C33.0261 15.3846 30.1242 12.9994 26.3447 12.9994H14.0441C9.59088 12.9994 5.89665 15.834 5.89665 20.3289C5.89665 22.6289 6.8819 25.9994 11.5415 26.8353C15.337 27.5186 16.8351 27.3199 16.8351 29.3506C16.8351 31.3224 14.6261 31.3224 11.7101 31.3224H0.808189C0.269676 29.2582 -0.0019826 27.1334 -0.000143311 25C-0.000143311 11.1981 11.196 2.43241e-05 25.0005 2.43241e-05Z"
-                  />
+              <svg width="50" height="50" viewbox="0 0 50 50" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M44.7442 9.66943C48.1584 14.0497 50.0085 19.4465 49.9999 25.0002C49.9999 38.8053 38.8051 50.0002 25.0006 50.0002C15.2871 50.0002 6.866 44.4579 2.72754 36.3649H13.6237C18.816 36.3649 22.4429 33.5662 22.4429 29.0925C22.4429 19.6111 11.5051 23.4739 11.5051 20.1092C11.5051 18.488 12.8057 17.8983 15.1859 17.8983H22.7692C24.8711 17.8983 27.3435 18.2752 27.3435 20.5688V28.1245C27.3435 33.5957 31.616 36.3643 36.0442 36.3643C40.548 36.3643 44.7435 33.5957 44.7435 28.1245V9.66943H44.7442Z"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M25.0005 2.43241e-05C30.0173 -0.00698868 34.919 1.50262 39.0627 4.33079V28.3013C39.0627 29.9628 37.7037 31.3224 36.0447 31.3224C34.3838 31.3224 33.0261 29.9628 33.0261 28.3013V21.1186C33.0261 15.3846 30.1242 12.9994 26.3447 12.9994H14.0441C9.59091 12.9994 5.89668 15.834 5.89668 20.3289C5.89668 22.6289 6.88193 25.9994 11.5415 26.8353C15.3371 27.5186 16.8351 27.3199 16.8351 29.3506C16.8351 31.3224 14.6262 31.3224 11.7101 31.3224H0.80822C0.269706 29.2582 -0.00195208 27.1334 -0.000112793 25C-0.000112793 11.1981 11.196 2.43241e-05 25.0005 2.43241e-05Z"/>
                 </svg>
+                
               </a>
             </li>
           </ul>
@@ -439,5 +441,9 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      document.addEventListener('click', event => {if (event.target.matches('button')) {event.target.focus()}})
+    </script>
   </body>
 </html>

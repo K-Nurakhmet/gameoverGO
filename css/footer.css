@@ -44,6 +44,7 @@
   white-space: pre-line;
 }
 
+
 .footer__item_type_tel {
   margin: 0 0 11px;
   background-image: url("../img/phone-call.svg");
@@ -70,6 +71,24 @@
 
 .footer__nav-item:last-child {
   margin-right: 0;
+}
+
+.footer__nav-link {
+  color: #FFF;
+  outline: 1px solid transparent;
+  border-radius: 50%;
+}
+
+.footer__nav-link:active {
+  color: #EADEED;
+}
+
+.footer__nav-link:hover {
+  color: #CD06FF;
+}
+
+.footer__nav-link:focus {
+  outline-color: #CD06FF;
 }
 
 .footer__grup {

@@ -25,6 +25,16 @@
   font-weight: 700;
   line-height: 136.364%;
   text-transform: uppercase;
-
 }
+
+.header__button:hover, .header__button:focus {
+  background-color: #6C0287;
+  outline: 3px solid #6C0287;
+}
+
+.header__button:active {
+  background-color: #640AA3;
+  outline: 1px solid #000;
+}
+
 

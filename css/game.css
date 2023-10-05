@@ -57,15 +57,17 @@
   line-height: normal;
 }
 
-.game__content-excerpt_size_s {
+.game__content-num {
   font-size: 75px;
+  color: #CD06FF;
   font-weight: 900;
   font-variant: small-caps;
 }
 
-.game__button {
+.game__link {
   padding: 25px 69px;
   font-size: 26px;
+  border-radius: 10px;
   font-weight: 700;
   line-height: 115.385%;
   text-transform: uppercase;
@@ -73,9 +75,35 @@
   border: none;
 }
 
-.game__link {
+.game__link:hover, .game__link:focus {
+  background-color: #840AA3;
+}
+
+.game__link:active {
+  background-color: #640AA3;
+}
+
+.game__arrow {
   position: absolute;
   bottom: 90px;
   right: 46%;
   z-index: 3;
+  font-size: 0;
+  fill: currentColor;
+  color: #FFFFFF;
+}
+
+.game__arrow:hover{
+  background-color: #FFFFFF;
+  color: #6C0287;
+  border-radius: 50%;
+}
+
+.game__arrow:active {
+  background-color: #CD06FF;
+  color: #FFF;
+}
+
+.game__arrow:focus {
+  outline: 1px solid #6C0287;
 }
