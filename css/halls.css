@@ -43,8 +43,34 @@
 }
 
 .halls__link {
+  display: inline-block;
+  position: relative;
+  bottom: 40px;
+  width: 252px;
   font-size: 70px;
   font-weight: 700;
   line-height: 1.2;
   text-transform: uppercase;
+}
+
+.halls__link::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: -92px;
+  left: -164px;
+  width: 580px;
+  height: 349px;
+}
+
+.halls__link:hover {
+  color: #840AA3;;
+}
+
+.halls__link:active {
+  color: #640AA3;
+}
+
+.halls__link:focus-visible {
+  color: #840AA3;
 }

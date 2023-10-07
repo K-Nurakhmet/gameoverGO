@@ -261,12 +261,12 @@
   background: #FFF;
 }
 
-.booking-form__room-input:focus-visible {
+.booking-form__room-input:focus-within {
   outline: 1px solid #CD06FF;
   outline-offset: 3px;
 }
 
-.booking-form__room-checkbox:focus-visible::before {
+.booking-form__room-checkbox:focus-within::before {
   outline: 1px solid #CD06FF;
   outline-offset: 3px;
 }

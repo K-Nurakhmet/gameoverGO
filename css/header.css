@@ -37,4 +37,11 @@
   outline: 1px solid #000;
 }
 
+.header-nav__link:hover,
+.header-nav__link:focus {
+  color: #6C0287;
+}
 
+.header-nav__link:active {
+  color: #640AA3;
+}
