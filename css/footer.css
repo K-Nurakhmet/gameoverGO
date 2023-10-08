@@ -25,53 +25,38 @@
 }
 
 .footer__address {
+  display: inline-block;
   margin: 0 0 35px;
   font-size: 24px;
   font-weight: 700;
   line-height: 1.4;
 }
 
-.footer__address-item {
-  display: flex;
-  align-items: center;
-  gap: 28px;
-  position: relative;
-  margin: 0 0 14px;
+.footer__item {
+  padding-left: 70px;
+  background-repeat: no-repeat;
+  background-position: left center;
 }
 
-.footer__address-item:first-child {
-  margin: 0 0 39px;
-}
-
-.footer__address-item:last-child {
-  margin: 0;
-}
-
-.footer__address-link {
-  display: flex;
-  align-items: center;
-  color: #CD06FF;
-  text-decoration: none;
-}
-
-.footer__address-text {
-  padding: 0px 0 0 28px;
+.footer__item_type_location {
+  margin: 0 0 38px;
+  background-image: url("../img/location.svg");
   white-space: pre-line;
-  color: #FFF;
+  user-select: none;
 }
 
+.footer__item_type_tel {
+  margin: 0 0 11px;
+  background-image: url("../img/phone-call.svg");
+}
+
+.footer__item_type_mail {
+  margin: 0;
+  background-image: url("../img/envelope.svg");
+}
 
 .footer__nav-list {
   font-size: 0;
-}
-
-.footer__nav-item {
-  display: inline-block;
-  margin: 0 26px 0 0;
-}
-
-.footer__nav-item:last-child {
-  margin-right: 0;
 }
 
 .footer__nav-link {
@@ -92,6 +77,15 @@
   outline-color: #CD06FF;
 }
 
+.footer__nav-item {
+  display: inline-block;
+  margin: 0 26px 0 0;
+}
+
+.footer__nav-item:last-child {
+  margin-right: 0;
+}
+
 .footer__grup {
   display: flex;
   justify-content: space-between;
@@ -107,13 +101,11 @@
   text-align: end;
   font-size: 14px;
   line-height: 114.286%;
-  color: #FFF;
 }
 
 .footer__item-designer:last-child {
   margin: 0;
 }
-
 .footer__link-designer:hover,
 .footer__link-designer:focus {
   color: #CD06FF;
@@ -123,16 +115,16 @@
   color:  #EADEED;
 }
 
-.footer__address-link:hover,
+.footer__item_type_location:hover,
+.footer__link:hover,
 .footer__address-text:hover,
-.footer__address-link:focus,
+.footer__item_type_location:focus,
+.footer__link:focus,
 .footer__address-text:focus {
-  color: #640AA3;
+  color: #CD06FF;
 }
 
-.footer__address-link:active,
+.footer__link:active,
 .footer__address-text:active{
   color: #EADEED;
 }
-
-

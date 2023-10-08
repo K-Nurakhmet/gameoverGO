@@ -19,8 +19,9 @@
 
 .halls__item {
   position: relative;
-  display: inline-block;
+  flex-basis: calc(50% - 10px);
   text-align: center;
+  padding: 132px 0;
 }
 
 .halls__img {
@@ -29,6 +30,8 @@
   right: 0;
   left: 0;
   bottom: 0;
+  min-height: 100%;
+  object-fit: cover;
   z-index: -1;
 }
 
@@ -36,17 +39,9 @@
   margin: 0;
 }
 
-.halls__figure {
-  width: 580px;
-  height: 349px;
-  padding: 132px 0;
-}
-
 .halls__link {
   display: inline-block;
-  position: relative;
-  bottom: 40px;
-  width: 252px;
+  max-width: 252px;
   font-size: 70px;
   font-weight: 700;
   line-height: 1.2;
@@ -57,10 +52,10 @@
   content: "";
   position: absolute;
   display: block;
-  top: -92px;
-  left: -164px;
-  width: 580px;
-  height: 349px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .halls__link:hover {
@@ -73,4 +68,8 @@
 
 .halls__link:focus-visible {
   color: #840AA3;
+}
+
+.halls__link:hover::after {
+  background-color: #fff2;
 }
