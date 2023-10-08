@@ -57,9 +57,14 @@
   outline: 3px solid #FFF;
 }
 
+.booking-form__halls-label:focus{
+  background-color: #FFFFFF;
+  color: #000;
+  outline: 3px solid #640AA3;
+}
+
 .booking-form__halls-input:checked + .booking-form__halls-label {
   background-color: #6C0287;
-  outline: 3px solid #640AA3;
 }
 
 .booking-form__room {
