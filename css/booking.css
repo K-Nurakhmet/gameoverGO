@@ -44,9 +44,11 @@
   text-transform: uppercase;
   user-select: none;
   outline: 3px solid transparent;
+  transition: background-color .2s ease-in-out, color .2s, outline .2s ease-in-out;
 }
 
-.booking-form__halls-label:hover {
+.booking-form__halls-label:hover,
+.booking-form__halls-label:focus-within{
   background-color: #EADEED;
   outline: 3px solid #640AA3;
 }
@@ -57,11 +59,6 @@
   outline: 3px solid #FFF;
 }
 
-.booking-form__halls-label:focus{
-  background-color: #FFFFFF;
-  color: #000;
-  outline: 3px solid #640AA3;
-}
 
 .booking-form__halls-input:checked + .booking-form__halls-label {
   background-color: #6C0287;
@@ -104,6 +101,7 @@
   margin: 0 12px 0 0;
   width: 27px;
   height: 27px;
+  transition: outline .2s;
 }
 
 .booking-form__room-checkbox {
@@ -121,6 +119,7 @@
   height: 25px;
   background-color:  #F4F2FF;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+  transition: outline .2s;
 }
 
 .booking-form__room-checkbox::after {
@@ -135,6 +134,7 @@
   border-right: none;
   opacity: 0;
   transform: rotate(-45deg);
+  transition: 1s;
 }
 
 .booking-form__room-checkbox:checked:after {
@@ -220,6 +220,7 @@
 .booking-form__order-info:focus {
   outline: 2px solid #CD06FF;
   background-color: #FFF;
+  transition: .2s;
 }
 
 .booking-form__order-info_type_email {
@@ -239,7 +240,8 @@
   font-weight: 700;
   line-height: 127.273%;
   text-transform: uppercase;
-  border: 3px solid transparent;
+  border: 3px solid #FFF;
+  transition: .2s ease-in-out;
 }
 
 .booking-form__button:hover {
@@ -248,13 +250,13 @@
 }
 
 .booking-form__button:active {
-  background-color: #EADEED;
   border: 3px solid #EADEED;
+  background-color: #EADEED;
 }
 
-.booking-form__button:focus {
-  outline: 3px solid #6C0287;
-  background: #FFF;
+.booking-form__button:focus-visible {
+  border: 3px solid #6C0287;
+  background-color: #FFF;
 }
 
 .booking-form__room-input:focus-within {

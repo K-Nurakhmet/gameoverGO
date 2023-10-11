@@ -23,6 +23,11 @@
   flex-basis: 380px;
   height: 228px;
   background: no-repeat center/cover;
+  transition: all .2s ease;
+}
+
+.rest__item:hover {
+  transform: scale(1.1);
 }
 
 .rest__item_equipment_vr {

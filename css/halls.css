@@ -46,6 +46,7 @@
   font-weight: 700;
   line-height: 1.2;
   text-transform: uppercase;
+  transition: color 1s;
 }
 
 .halls__link::after {
@@ -56,6 +57,7 @@
   left: 0;
   right: 0;
   bottom: 0;
+  transition: background-color .2s ease-in-out;
 }
 
 .halls__link:hover {
