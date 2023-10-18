@@ -11,7 +11,8 @@
 .rest__list {
   display: flex;
   flex-wrap: wrap;
-  gap: 40px 20px;
+  gap: var(--gap);
+  padding: 0 0 70px;
 }
 
 .rest__text {
@@ -20,7 +21,7 @@
 
 .rest__item {
   padding: 166px 40px 6px;
-  flex-basis: 380px;
+  flex-basis: calc(100% / var(--cart-count) - (var(--gap) * (var(--cart-count) - 1)) / var(--cart-count));
   height: 228px;
   background: no-repeat center/cover;
   transition: all .2s ease;
@@ -36,6 +37,7 @@
 
 .rest__item_equipment_audio {
   background-image: url("../img/Audio-system.jpeg");
+  transform: translateY(70px);
 }
 
 .rest__item_equipment_karaoke {
@@ -49,6 +51,7 @@
 .rest__item_equipment_netflix {
   background-image: url("../img/Netflix.jpeg");
   background-position-y: -90px;
+  transform: translateY(70px);
 }
 
 .rest__item_equipment_ps {

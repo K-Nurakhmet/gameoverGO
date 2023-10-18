@@ -1,5 +1,5 @@
 .booking {
-  background-color: #440F51;
+  background-color: var(--section-color, #440F51);
 }
 
 .booking__title {
@@ -35,7 +35,7 @@
   width: 250px;
   padding: 7px 15px;
   color: #000;
-  background-color: #FFF;
+  background-color: var(--white-color, #FFF);
   border-radius: 8px;
   text-align: center;
   font-size: 30px;
@@ -233,7 +233,7 @@
 
 .booking-form__button {
   padding: 10px 44px;
-  background-color: #FFF;
+  background-color: var(--white-color, #FFF);
   color: #6C0287;
   border-radius: 10px;
   font-size: 22px;

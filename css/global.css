@@ -18,7 +18,7 @@ body {
   font-size: 20px;
   line-height: 1.4;
   background-color: #1B1A1B;
-  color: #FFFFFF;
+  color: var(--white-color, #FFF);
 }
 
 img {
@@ -84,6 +84,6 @@ iframe {
 .button {
   padding: 12px 32px;
   border-radius: 10px;
-  outline: 3px solid #CD06FF;
-  color: #FFF;
+  outline: 3px solid var(--white-color, #FFF);
+  color: var(--white-color, #FFF);
 }

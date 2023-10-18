@@ -1,4 +1,5 @@
 @import url(global.css);
+@import url(var.css);
 @import url(header.css);
 @import url(game.css);
 @import url(rest.css);

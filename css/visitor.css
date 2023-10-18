@@ -24,18 +24,32 @@
 
 .visitor__figure {
   display: inline-block;
+  position: relative;
   margin: 0 20px 0 0;
   vertical-align: top;
+  border-radius: 140px;
+}
+
+.visitor__figure::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 280px;
+  height: 280px;
+  background-image: radial-gradient(50% 50% at 50% 50%, rgba(196, 196, 196, 0.00) 0%, rgba(108, 2, 135, 0.50) 100%);
+  border-radius: 50%;
 }
 
 .visitor__img {
-  margin: 0 0 11px ;
+  margin: 0 0 11px;
   width: 280px;
   height: 280px;
   border-radius: 50%;
   object-fit: cover;
   object-position: top;
 }
+
 
 .visitor__admin {
   text-align: center;

@@ -61,7 +61,7 @@
 
 .about__quote-text::before,
 .about__quote-text::after {
-  color: #6C0287;
+  color: var(--purple-color, #CD06FF);
   font-weight: 900;
 }
 

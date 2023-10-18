@@ -61,7 +61,7 @@
 }
 
 .footer__nav-link {
-  color: #FFF;
+  color: var(--white-color, #FFF);
   outline: 1px solid transparent;
   border-radius: 50%;
   transition: color .2s;
