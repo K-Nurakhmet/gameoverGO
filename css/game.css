@@ -59,7 +59,7 @@
 
 .game__content-num {
   font-size: 75px;
-  color: var(--white-color, #FFF);
+  color: var(--purple-color);
   font-weight: 900;
   font-variant: small-caps;
 }
@@ -75,7 +75,8 @@
   transition: background-color .2s;
 }
 
-.game__link:hover, .game__link:focus {
+.game__link:hover,
+.game__link:focus {
   background-color: #840AA3;
 }
 
@@ -95,7 +96,7 @@
   transition: background-color .2s ease-in-out, color .2s;
 }
 
-.game__arrow:hover{
+.game__arrow:hover {
   background-color: #FFFFFF;
   color: #6C0287;
 }
