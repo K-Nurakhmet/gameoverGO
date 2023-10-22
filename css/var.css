@@ -1,10 +1,10 @@
 :root {
-  --white-color: #FFF;
-  --purple-color: #CD06FF;
-  --section-color: #440F51;
-  --gap: 20px;
+	--white-color: #fff;
+	--purple-color: #cd06ff;
+	--section-color: #440f51;
+	--gap: 20px;
 }
 
 .rest {
-  --cart-count: 3;
+	--cart-count: 3;
 }

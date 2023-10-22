@@ -90,24 +90,24 @@
   right: 46%;
   z-index: 3;
   font-size: 0;
-  border-radius: 50%;
-  fill: currentColor;
   color: var(--white-color, #FFF);
-  transition: background-color .2s ease-in-out, color .2s;
 }
 
-.game__arrow:hover {
+.game__arrow-svg {
+  transition: background-color .2s ease-in-out, color .2s;
+  border-radius: 100%;
+}
+
+.game__arrow-svg:hover {
   background-color: #FFFFFF;
   color: #6C0287;
 }
 
-.game__arrow:active {
+.game__arrow-svg:active {
   background-color: #CD06FF;
   color: #FFF;
 }
 
-.game__arrow:focus-visible {
+.game__arrow:focus {
   outline: 1px solid #6C0287;
-  border-radius: 1px;
-  background-color: inherit;
 }
