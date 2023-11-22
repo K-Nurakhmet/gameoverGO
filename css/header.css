@@ -8,6 +8,10 @@
   align-items: center;
 }
 
+.header__menu {
+  display: none;
+}
+
 .header-nav__list {
   display: flex;
   justify-content: space-between;
@@ -26,10 +30,12 @@
   font-weight: 700;
   line-height: 136.364%;
   text-transform: uppercase;
+  outline-color: var(--purple-color, #CD06FF);
   transition: background-color .2s ease-in-out;
 }
 
-.header__button:hover, .header__button:focus {
+.header__button:hover,
+.header__button:focus {
   background-color: #6C0287;
   outline: 3px solid #6C0287;
 }
@@ -46,4 +52,118 @@
 
 .header-nav__link:active {
   color: #640AA3;
+}
+
+@media (max-width: 1120px) {
+  .header {
+    padding: 30px 0 15px;
+  }
+
+  .header__img {
+    width: 87px;
+    height: 55px;
+  }
+
+  .header-nav__list {
+    gap: 20px;
+  }
+
+  .header-nav__link {
+    font-size: 18px;
+    line-height: calc(22 / 18);
+  }
+
+  .header__button {
+    padding: 10px 26px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: calc(24 / 18);
+  }
+}
+
+@media (max-width: 880px) {
+  .header {
+    padding: 35px 0 16px;
+  }
+
+  .header__menu {
+    display: inline;
+    width: 54px;
+    height: 29px;
+  }
+
+  .header__input {
+    display: none;
+  }
+
+  .header__label {
+    display: block;
+    background-image: url("../img/menu.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 54px;
+    height: 29px;
+  }
+
+  .header__label:hover {
+    background-image: url("../img/menu-hover.svg");
+  }
+
+  .header__label:active {
+    background-image: url("../img/menu-active.svg");
+  }
+
+  .header__input:checked+.header__label {
+    background-image: url("../img/close.svg");
+    width: 42px;
+    height: 42px;
+  }
+
+  .header__input:checked+.header__label:hover {
+    background-image: url("../img/close-hover.svg");
+  }
+
+  .header__input:checked+.header__label:active {
+    background-image: url("../img/close-active.svg");
+  }
+
+  .header__input:checked+.header__label:focus-visible {
+    color: #CD06FF;
+  }
+
+  .header-nav {
+    display: none;
+  }
+
+}
+
+@media (max-width: 550px) {
+  .header {
+    padding: 20px 0 10px;
+  }
+
+  .header__menu {
+    padding: 8px 0 0px 0;
+  }
+
+  .header__label {
+    width: 39px;
+    height: 20px;
+  }
+
+  .header__input:checked+.header__label {
+    background-image: url("../img/close.svg");
+    width: 39px;
+    height: 22px;
+  }
+
+  .header__img {
+    width: 66px;
+    height: 42px;
+  }
+
+  .header__button {
+    display: none;
+  }
 }

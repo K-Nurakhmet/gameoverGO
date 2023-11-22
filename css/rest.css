@@ -20,7 +20,7 @@
 }
 
 .rest__item {
-  padding: 166px 40px 6px;
+  padding: 166px 0 6px 40px;
   flex-basis: calc(100% / var(--cart-count) - (var(--gap) * (var(--cart-count) - 1)) / var(--cart-count));
   height: 228px;
   background: no-repeat center/cover;
@@ -65,4 +65,100 @@
 
 .rest__item_equipment_ps {
   background-image: url("../img/PlayStation5.jpg");
+}
+
+@media (max-width: 1120px) {
+  .rest {
+    padding: 39px 0 26px;
+  }
+
+  .rest__title {
+    margin-bottom: 35px;
+    font-size: 30px;
+    line-height: calc(40/30);
+  }
+
+  .rest__list {
+    gap: var(--gap);
+    column-gap: 28px;
+    padding: 0 0 60px;
+  }
+
+  .rest__item {
+    padding: 113px 0 0 20px;
+    height: 172px;
+  }
+
+  .rest__item_equipment_audio {
+    transform: translateY(53px);
+  }
+
+  .rest__item_equipment_netflix {
+    padding: 82px 10px 0px 22px;
+    transform: translateY(53px);
+  }
+}
+
+@media (max-width: 880px) {
+  .rest__title {
+    margin-bottom: 30px;
+    font-size: 24px;
+    line-height: calc(36/24);
+  }
+
+  .rest__list {
+    gap: var(--gap);
+    column-gap: 20px;
+    padding: 0;
+  }
+
+  .rest__item {
+    padding: 133px 0 0 29px;
+    height: 200px;
+  }
+
+  .rest__item_equipment_audio {
+    transform: translateY(0);
+  }
+
+  .rest__item_equipment_audio:hover {
+    transform: translateY(0) scale(1.1);
+  }
+
+  .rest__item_equipment_netflix {
+    padding: 132px 0px 0px 29px;
+    transform: translateY(0);
+  }
+
+  .rest__item_equipment_netflix:hover {
+    transform: translateY(0) scale(1.1);
+  }
+}
+
+@media (max-width: 690px) {
+  .rest__title {
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: calc(18/14);
+  }
+
+  .rest__list {
+    gap: var(--gap);
+    column-gap: 10px;
+  }
+
+  .rest__text {
+    font-size: 10px;
+    line-height: 1.4;
+  }
+
+  .rest__item {
+    padding: 30px 11px 0px 10px;
+    height: 75px;
+  }
+
+  .rest__item_equipment_netflix {
+    padding: 30px 5px 0px 10px;
+    background-position-y: -30px;
+  }
 }

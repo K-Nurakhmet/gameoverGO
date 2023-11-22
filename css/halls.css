@@ -1,6 +1,7 @@
 .halls {
   padding: 50px 0 100px;
 }
+
 .halls__title {
   margin: 0 0 40px;
   text-align: center;
@@ -35,10 +36,6 @@
   z-index: -1;
 }
 
-.halls__item_theme_right:last-child {
-  margin: 0;
-}
-
 .halls__link {
   display: inline-block;
   max-width: 252px;
@@ -61,7 +58,8 @@
 }
 
 .halls__link:hover {
-  color: #840AA3;;
+  color: #840AA3;
+  ;
 }
 
 .halls__link:active {
@@ -74,4 +72,84 @@
 
 .halls__link:hover::after {
   background-color: #fff2;
+}
+
+@media (max-width: 1024px) {
+  .halls {
+    padding: 20px 0 72px;
+  }
+
+  .halls__title {
+    margin: 0 0 37px;
+    font-size: 30px;
+    line-height: 133.333%;
+  }
+
+  .halls__item {
+    padding: 73px 0;
+  }
+
+  .halls__link {
+    font-size: 50px;
+    line-height: 1.2;
+  }
+}
+
+@media (max-width: 768px) {
+  .halls {
+    padding: 34px 0 62px;
+  }
+
+  .halls__title {
+    margin: 0 0 35px;
+    font-size: 24px;
+    line-height: 150%;
+  }
+
+  .halls__list {
+    gap: 18px;
+  }
+
+  .halls__item {
+    height: 200px;
+    padding: 61px 0 0 0;
+  }
+
+  .halls__link {
+    max-width: 129px;
+    font-size: 40px;
+    line-height: 1.25;
+  }
+}
+
+@media (max-width: 500px) {
+  .halls {
+    padding: 5px 0 62px;
+  }
+
+  .halls__title {
+    margin: 0 0 15px;
+    font-size: 14px;
+    line-height: 128.571%;
+  }
+
+  .halls__list {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .halls__item {
+    width: 280px;
+    height: 168px;
+    padding: 50px 0 50px 0;
+  }
+
+  .halls__link {
+    max-width: 79px;
+    font-size: 26px;
+    line-height: 130.769%;
+  }
 }

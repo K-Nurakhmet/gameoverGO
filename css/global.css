@@ -71,14 +71,10 @@ iframe {
   transform: scale(0);
 }
 
-.section {
-  padding: 50px 0;
-}
-
 .container {
   max-width: 1240px;
   padding: 0 30px;
-	margin: 0 auto;
+  margin: 0 auto;
 }
 
 .button {
@@ -86,4 +82,22 @@ iframe {
   border-radius: 10px;
   outline: 3px solid var(--white-color, #FFF);
   color: var(--white-color, #FFF);
+}
+
+@media (max-width: 1120px) {
+  .container {
+    padding: 0 60px;
+  }
+}
+
+@media (max-width: 880px) {
+  .container {
+    padding: 0 40px;
+  }
+}
+
+@media (max-width: 550px) {
+  .container {
+    padding: 0 20px;
+  }
 }

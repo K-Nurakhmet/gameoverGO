@@ -2,9 +2,31 @@
 	--white-color: #fff;
 	--purple-color: #cd06ff;
 	--section-color: #440f51;
-	--gap: 20px;
+	--gap: 40px;
 }
 
 .rest {
 	--cart-count: 3;
+}
+
+@media (max-width: 1120px) {
+	:root {
+		--gap: 31px;
+	}
+}
+
+@media (max-width: 880px) {
+	:root {
+		--gap: 20px;
+	}
+
+	.rest {
+		--cart-count: 2;
+	}
+}
+
+@media (max-width: 690px) {
+	:root {
+		--gap: 10px;
+	}
 }
