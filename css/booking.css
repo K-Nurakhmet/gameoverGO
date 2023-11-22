@@ -430,11 +430,9 @@
   }
 
   .booking-form__order-inner {
-    display: grid;
-    grid-template-columns: 280px 1fr 300px;
-    /* flex-direction: row;
+    flex-direction: row;
     gap: 105px;
-    max-width: 100%; */
+    max-width: 100%;
     margin: 0 0 42px;
   }
 
