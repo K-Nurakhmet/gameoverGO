@@ -43,6 +43,7 @@
   font-weight: 700;
   line-height: 133.333%;
   text-transform: uppercase;
+  white-space: nowrap;
   user-select: none;
   outline: 3px solid transparent;
   transition: background-color .2s ease-in-out, color .2s, outline .2s ease-in-out;
@@ -392,6 +393,7 @@
 
   .booking-form__room {
     flex-wrap: wrap;
+    justify-content: space-between;
     gap: 0px 132px;
     margin: 0 0 54px;
   }
@@ -567,17 +569,23 @@
   }
 
   .booking-form__order-inner {
-    grid-template-columns: minmax(min-content, 280px);
+    grid-template-columns: minmax(280px, 680px);
     grid-template-rows: repeat(2, 52px);
     gap: 15px 12px;
     padding: 11px 0 0 0;
   }
 
+  .booking-form__order-center {
+    max-width: 100%;
+  }
+
   .booking-form__order-left {
+    justify-content: space-between;
     gap: 12px;
   }
 
   .booking-form__order-input {
+    max-width: calc((100%/2) - 12px);
     font-size: 14px;
     line-height: 128.571%;
   }
@@ -598,7 +606,7 @@
   }
 
   .booking-form__order-right {
-    max-width: 280px;
+    max-width: 100%;
   }
 
   .booking-form__button {

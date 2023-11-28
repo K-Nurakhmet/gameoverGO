@@ -33,6 +33,16 @@
   position: absolute;
   top: -46px;
   left: 32px;
+  transition: color .2s;
+}
+
+.pages__link:hover,
+.pages__link:focus {
+  color: #840AA3;
+}
+
+.pages__link:active {
+  color: #640AA3;
 }
 
 .pages__link-text {
@@ -122,6 +132,16 @@
   line-height: 120%;
   text-transform: uppercase;
   text-align: center;
+  transition: color .2s ease-in-out;
+}
+
+.pages__halls-link:hover,
+.pages__halls-link:focus {
+  color: #840AA3;
+}
+
+.pages__halls-link:active {
+  color: #640AA3;
 }
 
 .pages__halls-item_theme_west {
@@ -274,11 +294,12 @@
 
   .pages {
     height: 168px;
+    background-position: center top -18px;
   }
 
   .pages__link {
     top: -40px;
-    left: 12px;
+    left: 37px;
   }
 
   .pages__link-svg {
@@ -338,5 +359,11 @@
     width: clamp(280px, 75%, 700px);
     height: 140px;
     padding: 42px 105px;
+  }
+}
+
+@media (max-width: 550px) {
+  .pages__link {
+    left: 20px;
   }
 }
