@@ -1,3 +1,7 @@
+.rest {
+  padding: 50px 0;
+}
+
 .rest__title {
   margin-bottom: 41px;
   text-align: center;
@@ -69,7 +73,7 @@
 
 @media (max-width: 1120px) {
   .rest {
-    padding: 39px 0 26px;
+    padding: 39px 0 41px;
   }
 
   .rest__title {
@@ -100,6 +104,10 @@
 }
 
 @media (max-width: 880px) {
+  .rest {
+    padding: 37px 0 26px;
+  }
+
   .rest__title {
     margin-bottom: 30px;
     font-size: 24px;
@@ -136,6 +144,10 @@
 }
 
 @media (max-width: 690px) {
+  .rest {
+    padding: 26px 0;
+  }
+
   .rest__title {
     margin-bottom: 15px;
     font-size: 14px;

@@ -29,4 +29,9 @@
 	:root {
 		--gap: 10px;
 	}
+
+	.booking-form__halls-label {
+		--halls: 2;
+		--halls-gap: 20px;
+	}
 }

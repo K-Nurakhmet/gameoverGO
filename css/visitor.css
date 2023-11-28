@@ -1,3 +1,6 @@
+.visitor {
+  padding: 50px 0;
+}
 
 .visitor__title {
   margin: 0 0 40px;
@@ -25,7 +28,7 @@
 .visitor__figure {
   display: inline-block;
   position: relative;
-  margin: 0 20px 0 0;
+  margin: 0 15px 0 0;
   vertical-align: top;
   border-radius: 140px;
 }
@@ -42,7 +45,7 @@
 }
 
 .visitor__img {
-  margin: 0 0 11px;
+  margin: 0 0 6px;
   width: 280px;
   height: 280px;
   border-radius: 50%;
@@ -60,4 +63,147 @@
   padding: 60px 0 0;
   max-width: calc(100% - 306px);
   vertical-align: top;
+}
+
+@media (max-width: 1024px) {
+  .visitor {
+    padding: 35px 0;
+  }
+
+  .visitor__title {
+    margin: 0 0 25px;
+    font-size: 30px;
+    line-height: 133.333%;
+  }
+
+  .visitor__list {
+    padding: 0 0 0 100px;
+  }
+
+  .visitor__item {
+    margin: 0 0 39px;
+  }
+
+  .visitor__figure {
+    margin: 0 31px 0 0;
+  }
+
+  .visitor__figure::before {
+    width: 172px;
+    height: 172px;
+  }
+
+  .visitor__img {
+    margin: 0 0 15px;
+    width: 172px;
+    height: 172px;
+  }
+
+
+  .visitor__admin {
+    font-size: 18px;
+    line-height: 144.444%;
+  }
+
+  .visitor__text {
+    padding: 33px 0 0;
+    font-size: 18px;
+    line-height: 144.444%;
+  }
+}
+
+@media (max-width: 800px) {
+  .visitor {
+    padding: 30px 0;
+  }
+
+  .visitor__title {
+    margin: 0 0 31px;
+    font-size: 24px;
+    line-height: 150%;
+  }
+
+  .visitor__list {
+    padding: 0 0 0 63px;
+  }
+
+  .visitor__item {
+    margin: 0 0 28px;
+  }
+
+  .visitor__figure {
+    margin: 0 10px 0 0;
+  }
+
+  .visitor__figure::before {
+    width: 153px;
+    height: 153px;
+  }
+
+  .visitor__img {
+    margin: 0 0 12px;
+    width: 153px;
+    height: 153px;
+  }
+
+
+  .visitor__admin {
+    font-size: 14px;
+    line-height: 142.857%;
+  }
+
+  .visitor__text {
+    padding: 33px 0 0;
+    font-size: 16px;
+    line-height: 137.5%;
+  }
+}
+
+@media (max-width: 680px) {
+  .visitor {
+    padding: 10px 0;
+  }
+
+  .visitor__title {
+    margin: 0 0 15px;
+    font-size: 14px;
+    line-height: 114.286%;
+  }
+
+  .visitor__list {
+    padding: 0;
+  }
+
+  .visitor__item {
+    margin: 0 0 20px;
+    text-align: center;
+  }
+
+  .visitor__figure {
+    margin: 0;
+  }
+
+  .visitor__figure::before {
+    right: 20px;
+    width: 86px;
+    height: 86px;
+  }
+
+  .visitor__img {
+    margin: 0 0 2px;
+    width: 86px;
+    height: 86px;
+  }
+
+  .visitor__admin {
+    width: 125px;
+  }
+
+  .visitor__text {
+    max-width: 100%;
+    padding: 16px 0 0;
+    font-size: 12px;
+    line-height: 133.333%;
+    text-align: start;
+  }
 }
