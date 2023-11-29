@@ -23,6 +23,7 @@
   align-items: center;
   padding: 20px 70px;
   color: var(--white-color, #FFF);
+  cursor: pointer;
 }
 
 .questions__item-text {
