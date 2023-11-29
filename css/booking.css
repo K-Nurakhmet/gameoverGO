@@ -45,6 +45,7 @@
   text-transform: uppercase;
   white-space: nowrap;
   user-select: none;
+  cursor: pointer;
   outline: 3px solid transparent;
   transition: background-color .2s ease-in-out, color .2s, outline .2s ease-in-out;
 }
