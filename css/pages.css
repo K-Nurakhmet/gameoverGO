@@ -1,4 +1,4 @@
-.pages__header {
+.header-pages {
   padding: 23px 0 107px;
 }
 
@@ -10,15 +10,16 @@
   height: 750px;
 }
 
-.star-wars__pages {
+.pages-starwars {
   background-image: url("../img/Pages-starwars.jpeg");
+  background-position: top;
 }
 
-.west__pages {
+.pages-west {
   background-image: url("../img/Pages-west.jpeg");
 }
 
-.neon__pages {
+.pages-neon {
   background-image: url("../img/Pages-neon.jpeg");
 }
 
@@ -58,11 +59,11 @@
   text-transform: uppercase;
 }
 
-.pages__content {
+.pages-content {
   padding: 100px 0 50px;
 }
 
-.pages__content-text {
+.pages-content__text {
   margin: 0 0 100px;
   padding: 0 50px;
   font-size: 24px;
@@ -71,7 +72,7 @@
   text-align: center;
 }
 
-.pages__subtitle {
+.pages-subtitle {
   margin: 0 0 40px;
   font-size: 40px;
   font-weight: 700;
@@ -80,43 +81,43 @@
   text-transform: uppercase;
 }
 
-.pages__content-inner {
+.pages-content__inner {
   display: flex;
   align-items: center;
   gap: 80px;
 }
 
-.pages__content-img {
+.pages-content__img {
   width: 600px;
   height: 424px;
   object-fit: cover;
 }
 
-.pages__content-desc {
+.pages-content__desc {
   margin: 0;
 }
 
-.pages__content-info {
+.pages-content__info {
   margin: 0 0 15px;
   font-size: 20px;
   line-height: 140%;
 }
 
-.pages__content-info:last-child {
+.pages-content__info:last-child {
   margin: 0;
 }
 
-.pages__halls {
+.pages-halls {
   padding: 50px 0 82px;
 }
 
-.pages__halls-list {
+.pages-halls__list {
   display: flex;
   justify-content: space-between;
   gap: 20px;
 }
 
-.pages__halls-item {
+.pages-halls__item {
   width: clamp(228px, 75%, 380px);
   height: 229px;
   padding: 82px 105px;
@@ -126,7 +127,7 @@
   text-align: center;
 }
 
-.pages__halls-link {
+.pages-halls__link {
   font-size: 30px;
   font-weight: 700;
   line-height: 120%;
@@ -135,33 +136,33 @@
   transition: color .2s ease-in-out;
 }
 
-.pages__halls-link:hover,
-.pages__halls-link:focus {
+.pages-halls__link:hover,
+.pages-halls__link:focus {
   color: #840AA3;
 }
 
-.pages__halls-link:active {
+.pages-halls__link:active {
   color: #640AA3;
 }
 
-.pages__halls-item_theme_west {
+.pages-halls__item_theme_west {
   background-image: url("../img/wild-west.jpg");
 }
 
-.pages__halls-item_theme_wars {
+.pages-halls__item_theme_wars {
   background-image: url("../img/star-wars.jpg");
 }
 
-.pages__halls-item_theme_neon {
+.pages-halls__item_theme_neon {
   background-image: url("../img/neon-style.jpg");
 }
 
-.pages__halls-item_theme_vibes {
+.pages-halls__item_theme_vibes {
   background-image: url("../img/vibes.jpg");
 }
 
 @media (max-width: 1120px) {
-  .pages__header {
+  .header-pages {
     padding: 20px 0 99px;
   }
 
@@ -173,41 +174,41 @@
     left: 54px;
   }
 
-  .pages__content {
+  .pages-content {
     padding: 70px 0 35px;
   }
 
-  .pages__content-text {
+  .pages-content__text {
     margin: 0 0 70px;
     font-size: 20px;
   }
 
-  .pages__subtitle {
+  .pages-subtitle {
     margin: 0 0 36px;
     font-size: 30px;
     line-height: 133.333%;
   }
 
-  .pages__content-inner {
+  .pages-content__inner {
     gap: 22px;
   }
 
-  .pages__content-img {
+  .pages-content__img {
     width: 461px;
     height: 326px;
   }
 
-  .pages__content-info {
+  .pages-content__info {
     margin: 0 0 9px;
     font-size: 18px;
     line-height: 155.556%;
   }
 
-  .pages__halls {
+  .pages-halls {
     padding: 35px 0 41px;
   }
 
-  .pages__halls-item {
+  .pages-halls__item {
     width: clamp(200px, 75%, 288px);
     height: 172px;
     padding: 50px 56px;
@@ -215,7 +216,7 @@
 }
 
 @media (max-width: 880px) {
-  .pages__header {
+  .header-pages {
     padding: 26px 0 85px;
   }
 
@@ -237,58 +238,58 @@
     line-height: 120%;
   }
 
-  .pages__content {
+  .pages-content {
     padding: 60px 0 30px;
   }
 
-  .pages__content-text {
+  .pages-content__text {
     margin: 0 0 60px;
     padding: 0;
     font-size: 16px;
   }
 
-  .pages__subtitle {
+  .pages-subtitle {
     margin: 0 0 30px;
     font-size: 24px;
     line-height: 150%;
   }
 
-  .pages__content-inner {
+  .pages-content__inner {
     gap: 39px;
   }
 
-  .pages__content-img {
+  .pages-content__img {
     width: 329px;
     height: 326px;
   }
 
-  .pages__content-info {
+  .pages-content__info {
     margin: 0 0 17px;
     font-size: 16px;
     line-height: 175%;
   }
 
-  .pages__halls {
+  .pages-halls {
     padding: 30px 0 35px;
   }
 
-  .pages__halls-list {
+  .pages-halls__list {
     gap: 8px;
   }
 
-  .pages__halls-item {
+  .pages-halls__item {
     width: clamp(150px, 75%, 224px);
     height: 134px;
     padding: 43px 53px;
   }
 
-  .pages__halls-link {
+  .pages-halls__link {
     font-size: 20px;
   }
 }
 
 @media (max-width: 700px) {
-  .pages__header {
+  .header-pages {
     padding: 12px 0 51px
   }
 
@@ -315,47 +316,47 @@
     font-size: 30px;
   }
 
-  .pages__content {
+  .pages-content {
     padding: 31px 0 15px;
   }
 
-  .pages__content-text {
+  .pages-content__text {
     margin: 0 0 29px;
     font-size: 16px;
   }
 
-  .pages__subtitle {
+  .pages-subtitle {
     margin: 0 0 15px;
     font-size: 14px;
     line-height: 128.571%;
   }
 
-  .pages__content-inner {
+  .pages-content__inner {
     flex-direction: column;
     gap: 15px;
   }
 
-  .pages__content-img {
+  .pages-content__img {
     width: 280px;
     height: 180px;
   }
 
-  .pages__content-info {
+  .pages-content__info {
     font-size: 12px;
     line-height: 133.333%;
   }
 
-  .pages__halls {
+  .pages-halls {
     padding: 15px 0 26px;
   }
 
-  .pages__halls-list {
+  .pages-halls__list {
     flex-direction: column;
     align-items: center;
     gap: 5px;
   }
 
-  .pages__halls-item {
+  .pages-halls__item {
     width: clamp(280px, 75%, 700px);
     height: 140px;
     padding: 42px 105px;

@@ -67,6 +67,7 @@
 }
 
 .game__link {
+  display: inline-block;
   padding: 25px 69px;
   font-size: 26px;
   border-radius: 10px;
@@ -232,7 +233,6 @@
 
   .game__link {
     margin: 0;
-    left: 40px;
     padding: 11px 35px;
     font-size: 16px;
     border-radius: 4px;

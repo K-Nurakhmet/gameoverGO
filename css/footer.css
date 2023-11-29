@@ -43,19 +43,19 @@
   transition: color .2s;
 }
 
-.footer__item_type_location {
+.footer__link_type_location {
   margin: 0 0 30px;
   background-image: url("../img/location.svg");
   white-space: pre-line;
   user-select: none;
 }
 
-.footer__item_type_tel {
+.footer__link_type_tel {
   margin: 0 0 11px;
   background-image: url("../img/phone-call.svg");
 }
 
-.footer__item_type_mail {
+.footer__link_type_mail {
   margin: 0;
   background-image: url("../img/envelope.svg");
 }
@@ -162,16 +162,16 @@
     background-size: 26px;
   }
 
-  .footer__item_type_location {
+  .footer__link_type_location {
     margin: 0 0 42px;
   }
 
-  .footer__item_type_tel {
+  .footer__link_type_tel {
     display: block;
     margin: 0 0 11px;
   }
 
-  .footer__item_type_mail {
+  .footer__link_type_mail {
     margin: 0;
   }
 
@@ -224,17 +224,17 @@
     padding-left: 15px;
   }
 
-  .footer__item_type_location {
+  .footer__link_type_location {
     margin: 0 0 36px;
     background-position: top left 48px;
     padding: 0;
   }
 
-  .footer__item_type_tel {
+  .footer__link_type_tel {
     margin: 0 0 24px;
   }
 
-  .footer__item_type_mail {
+  .footer__link_type_mail {
     padding-left: 40px;
     margin: 0;
   }
@@ -275,16 +275,16 @@
     background-size: 20px;
   }
 
-  .footer__item_type_location {
+  .footer__link_type_location {
     margin: 0 0 10px;
     background-position: top left 30px;
   }
 
-  .footer__item_type_tel {
+  .footer__link_type_tel {
     margin: 0;
   }
 
-  .footer__item_type_mail {
+  .footer__link_type_mail {
     padding-left: 24px;
   }
 
